@@ -30,7 +30,7 @@ const studentCourseArr = [
  * */
 
 function findSimilarCourses(studentCoursePairs) {
-  const studentIds = studentCoursePairs.map(x => x[0]).sort();
+  const studentIds = studentCoursePairs.map(x => x[0]);
   const uniqueIds = Array.from(new Set(studentIds));
   const results = {};
 
